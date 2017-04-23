@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
         if (!isInMenu && GvrViewer.Instance.Triggered)
         {
             move = !move;
-            Debug.Log(move);
+            //Debug.Log(move);
         }
     }
 
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         if (move)
         {
             Vector3 direction = new Vector3(mainCamera.transform.forward.x, 0, mainCamera.transform.forward.z).normalized;
-            Debug.Log(myRigidbody.velocity.magnitude);
+            //Debug.Log(myRigidbody.velocity.magnitude);
             if (myRigidbody.velocity.magnitude < maxWalkSpeed)
             {
                 myRigidbody.AddForce(direction * acceleration, ForceMode.Force);
