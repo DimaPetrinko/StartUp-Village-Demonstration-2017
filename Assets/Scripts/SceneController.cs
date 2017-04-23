@@ -16,4 +16,9 @@ public class SceneController : MonoBehaviour
     {
         gameManager.LoadScene(index);
     }
+
+    public void ReturnToMenu()
+    {
+        LoadScene(GameManager.MAIN_MENU_SCENE_INDEX);
+    }
 }

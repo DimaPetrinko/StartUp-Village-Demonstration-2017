@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-    const int MAIN_MENU_SCENE_INDEX = 1;
+    public const int MAIN_MENU_SCENE_INDEX = 1;
 
     private void Start()
     {
@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 
     public bool IsInMenu()
     {
-        return SceneManager.sceneCount < 2 || (SceneManager.GetActiveScene() == SceneManager.GetSceneAt(MAIN_MENU_SCENE_INDEX));
+        return /*SceneManager.sceneCount < 2 ||*/ (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(MAIN_MENU_SCENE_INDEX));
     }
 
     public void LoadScene(int index)
