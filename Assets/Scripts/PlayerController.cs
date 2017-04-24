@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
     {
         move = false;
         transform.position = sceneController.spawnSpot.transform.position;
+        transform.rotation = sceneController.spawnSpot.transform.rotation;
         myRigidbody.velocity = Vector3.zero;
         myRigidbody.isKinematic = isInMenu;
     }

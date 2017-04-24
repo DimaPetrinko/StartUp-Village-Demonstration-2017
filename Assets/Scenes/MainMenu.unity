@@ -223,6 +223,18 @@ Prefab:
       propertyPath: spawnSpot
       value: 
       objectReference: {fileID: 2053364670}
+    - target: {fileID: 4795879247461400, guid: cd40fe5af0faca24685e34044f7a0402, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4795879247461400, guid: cd40fe5af0faca24685e34044f7a0402, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4795879247461400, guid: cd40fe5af0faca24685e34044f7a0402, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd40fe5af0faca24685e34044f7a0402, type: 2}
   m_IsPrefabParent: 0
