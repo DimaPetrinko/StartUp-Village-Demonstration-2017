@@ -19,6 +19,6 @@ public class GameManager : MonoBehaviour {
 
     public void LoadScene(int index)
     {
-        SceneManager.LoadSceneAsync(index);
+        SceneManager.LoadScene(index);
     }
 }
