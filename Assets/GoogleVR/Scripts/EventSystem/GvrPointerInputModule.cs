@@ -375,7 +375,7 @@ public class GvrPointerInputModule : BaseInputModule {
     pointerData.dragging = false;
   }
 
-  private void HandleTriggerDown() {
+  public void HandleTriggerDown() {
     var go = pointerData.pointerCurrentRaycast.gameObject;
 
     // Send pointer down event.

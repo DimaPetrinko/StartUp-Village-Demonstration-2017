@@ -7,20 +7,43 @@ public class PlayerController : MonoBehaviour
     public Rigidbody myRigidbody;
     public float acceleration = 1f;
     public float maxWalkSpeed = 5f;
+    public float maxHeadTiltAngle = 45f;
 
     private GameObject mainCamera;
     private SceneController sceneController;
+    private GvrPointerInputModule gvrpim;
     private bool move = false;
     private bool isInMenu = true;
+    private bool headWasTilted = false;
+
+    private bool HeadTilted
+    {
+        get
+        {
+            float angle = mainCamera.transform.eulerAngles.z;
+            if (angle > 180) angle -= 360f;
+            return Mathf.Abs(angle) >= maxHeadTiltAngle;
+        }
+    }
 
     private void Start()
     {
         mainCamera = Camera.main.gameObject;
+        gvrpim = FindObjectOfType<GvrPointerInputModule>();
     }
 
     private void Update()
     {
-        if (!isInMenu && GvrViewer.Instance.Triggered)
+        bool headTrigger = !headWasTilted && HeadTilted;
+        if (headTrigger)
+        {
+            headWasTilted = true;
+            gvrpim.HandleTriggerDown();
+        }
+        if (!HeadTilted)
+            headWasTilted = false;
+            //Debug.Log(headTrigger);
+        if (!isInMenu && (GvrViewer.Instance.Triggered || headTrigger))
         {
             move = !move;
             //Debug.Log(move);
