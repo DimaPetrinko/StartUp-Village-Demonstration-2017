@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
             //Debug.Log(myRigidbody.velocity.magnitude);
             if (myRigidbody.velocity.magnitude < maxWalkSpeed)
             {
-                myRigidbody.AddForce(direction * acceleration, ForceMode.Force);
+                myRigidbody.AddForce(direction * acceleration *Time.deltaTime, ForceMode.Force);
             }
         }
     }
