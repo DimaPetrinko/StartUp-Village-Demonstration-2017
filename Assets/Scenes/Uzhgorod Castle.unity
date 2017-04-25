@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 83023616}
-  m_IndirectSpecularColor: {r: 0.4511891, g: 0.50094014, b: 0.5737454, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -4941,6 +4941,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.215626, y: 8.000003, z: 13.013148}
   m_Center: {x: -10.392185, y: 0.00000047683716, z: 1.8065729}
+--- !u!1 &1601819022 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100082, guid: a60fc9738eb85d448b3fbd80a98249db, type: 3}
+  m_PrefabInternal: {fileID: 1601818827}
+--- !u!65 &1601819023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1601819022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.351695, y: 3.3007429, z: 0.00000019073492}
+  m_Center: {x: -22.155622, y: 5.9616733, z: 8.171651e-14}
 --- !u!1 &1614215599
 GameObject:
   m_ObjectHideFlags: 0
