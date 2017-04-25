@@ -4951,6 +4951,10 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 17.231
       objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: a60fc9738eb85d448b3fbd80a98249db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.308
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a60fc9738eb85d448b3fbd80a98249db, type: 3}
   m_IsPrefabParent: 0
@@ -7106,7 +7110,7 @@ TerrainCollider:
   m_Material: {fileID: 0}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: a61259aace9ab0d46afe6fe426a579a2, type: 2}
-  m_EnableTreeColliders: 1
+  m_EnableTreeColliders: 0
 --- !u!218 &2136156229
 Terrain:
   m_ObjectHideFlags: 0

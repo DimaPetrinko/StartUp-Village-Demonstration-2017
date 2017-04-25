@@ -177,7 +177,7 @@ TerrainCollider:
   m_Material: {fileID: 0}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 9d7b8c85641874f42b5fa520cfa8e3f3, type: 2}
-  m_EnableTreeColliders: 1
+  m_EnableTreeColliders: 0
 --- !u!218 &388919090
 Terrain:
   m_ObjectHideFlags: 0
@@ -307,6 +307,11 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 23725194152249042, guid: afb8d9f791555334ca35f7f6df57c577,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1b8034222c148b141a3c52edbbb9cca3, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: afb8d9f791555334ca35f7f6df57c577, type: 2}
   m_IsPrefabParent: 0
